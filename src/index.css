@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+
+  --color-brand-primary: #174C3C;
+  --color-brand-deep: #10382D;
+  --color-brand-fresh: #43A879;
+  --color-brand-mint: #E7F4EC;
+  --color-brand-mint-light: #F2F8F4;
+  --color-brand-bg: #F8FAF7;
+  --color-brand-text: #17251F;
+  --color-brand-muted: #66756D;
+  --color-brand-border: #E2EAE4;
+  --color-brand-warning: #D99125;
+  --color-brand-error: #D9534F;
+  --color-brand-info: #3977C3;
+}
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #17251F;
+  background-color: #F8FAF7;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #F8FAF7;
+  color: #17251F;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom scrollbar for clean dashboard aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F8FAF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D3C9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A3BAAB;
+}
